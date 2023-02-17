@@ -16,14 +16,14 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive clothing ecommerce - Bedimcode</title>
+        <title>MisCamisetas - Camisetas personalizadas</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">
-                    Shop.
+                    <img src="assets/img/MisCamiseta_logo.jpeg" alt="Mis Camisetas logo" class="miscamisetas_logo">
                 </a>
 
                 <div class="nav__menu" id="nav-menu">
@@ -31,28 +31,28 @@
                         <li class="nav__item">
                             <a href="#home" class="nav__link active-link">
                                 <i class="ri-home-line"></i>
-                                <span>Home</span>
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#new" class="nav__link">
-                                <i class="ri-price-tag-3-line"></i>
-                                <span>New</span>
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#collection" class="nav__link">
-                                <i class="ri-compass-line"></i>
-                                <span>Collection</span>
+                                <span>Inicio</span>
                             </a>
                         </li>
 
                         <li class="nav__item">
                             <a href="#products" class="nav__link">
                                 <i class="ri-t-shirt-line"></i>
-                                <span>Products</span>
+                                <span>Personaliza</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#collection" class="nav__link">
+                                <i class="ri-compass-line"></i>
+                                <span>Catálogo</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#footer" class="nav__link">
+                                <i class="ri-phone-line"></i>
+                                <span>Contacto</span>
                             </a>
                         </li>
                     </ul>
@@ -70,31 +70,101 @@
                 <div class="home__container container grid">
                     <div class="home__data">
                         <h1 class="home__title">
-                            New Clothing <br>
-                            Collection
+                            Mis <br>
+                            Camisetas
                         </h1>
 
                         <p class="home__description">
-                            The new collection of clothing from <br>
-                            the best brands this year.
+                            ¿Aburrido de las mismas camisetas de fútbol de siempre? 
+                            <br>Con Mis Camisetas, crea algo diferente.
+                            <br>Elige entre una amplia selección de equipos populares o personaliza tu propia camiseta.
+                            <br>¡Qué tu equipo destaque con una camiseta única que solo puedes encontrar en Mis Camisetas!
                         </p>
 
+                        <a href="#products" class="button link">
+                            Camisetas más pedidas <i class="ri-arrow-right-line"></i><br>
+                        </a>
                         <a href="#new" class="button link">
-                            Explore <i class="ri-arrow-right-line"></i>
+                            <br>Personaliza tu camiseta <i class="ri-arrow-right-line"></i>
                         </a>
                     </div>
 
                     <div class="home__images">
-                        <img src="assets/img/home1.png" alt="home image">
-                        <img src="assets/img/home2.png" alt="home image">
+                        <img src="assets/img/Real-Madrid-2023-Authentic-Player-Jersey.webp" alt="home image">
+                        <img src="assets/img/psg.home.jpg" alt="home image">
                     </div>
                 </div>
             </section>
+            <!--==================== Personaliza ====================-->
+            <section class="products section" id="products">
+                <h2 class="section__title">
+                    Camisetas más pedidas
+                </h2>
 
-            <!--==================== NEW ====================-->
+                <div class="products__container container swiper">
+                    <div class="swiper-wrapper">
+                        <article class="products__card swiper-slide">
+                            <img src="assets/img/productRM.png" alt="product image" class="products__image">
+
+                            <h2 class="products__title">
+                                Real Madrid <br>
+                                2021/2022
+                            </h2>
+                            <span class="products__price">
+                                $60.99
+                            </span>
+                        </article>
+
+                        <article class="products__card swiper-slide">
+                            <img src="assets/img/product2psg.jpeg" alt="product image" class="products__image">
+
+                            <h2 class="products__title">
+                                Paris-Saint Germain <br>
+                                2021/2022
+                            </h2>
+                            <span class="products__price">
+                                $60.99
+                            </span>
+                        </article>
+
+                        <article class="products__card swiper-slide">
+                            <img src="assets/img/product3mancity.webp" alt="product image" class="products__image">
+
+                            <h2 class="products__title">
+                                Manchester City <br>
+                                2021/2022
+                            </h2>
+                            <span class="products__price">
+                                $60.99
+                            </span>
+                        </article>
+
+                        <article class="products__card swiper-slide">
+                            <img src="assets/img/product4bayern.avif" alt="product image" class="products__image">
+
+                            <h2 class="products__title">
+                                Bayern Munich <br>
+                                2021/2022
+                            </h2>
+                            <span class="products__price">
+                                $60.99
+                            </span>
+                        </article>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-line"></i>
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-line"></i>
+                    </div>
+                </div>
+            </section>
+            <!--==================== NEW / HAY QUE PASAR ESTA A PERSONALIZA ====================-->
             <section class="new section" id="new">
                 <h2 class="section__title">
-                    New Categories
+                    Personaliza
                 </h2>
 
                 <div class="new__container container grid">
@@ -183,69 +253,6 @@
                 </div>
             </section>
 
-            <!--==================== PRODUCTS ====================-->
-            <section class="products section" id="products">
-                <h2 class="section__title">
-                    Best Products
-                </h2>
-
-                <div class="products__container container swiper">
-                    <div class="swiper-wrapper">
-                        <article class="products__card swiper-slide">
-                            <img src="assets/img/product1.png" alt="product image" class="products__image">
-
-                            <h2 class="products__title">
-                                Gotland black Jacket
-                            </h2>
-                            <span class="products__price">
-                                $124.99
-                            </span>
-                        </article>
-
-                        <article class="products__card swiper-slide">
-                            <img src="assets/img/product2.png" alt="product image" class="products__image">
-
-                            <h2 class="products__title">
-                                Black Sports Shorts
-                            </h2>
-                            <span class="products__price">
-                                $34.99
-                            </span>
-                        </article>
-
-                        <article class="products__card swiper-slide">
-                            <img src="assets/img/product3.png" alt="product image" class="products__image">
-
-                            <h2 class="products__title">
-                                Knox Quilted Jacket
-                            </h2>
-                            <span class="products__price">
-                                $97.99
-                            </span>
-                        </article>
-
-                        <article class="products__card swiper-slide">
-                            <img src="assets/img/product4.png" alt="product image" class="products__image">
-
-                            <h2 class="products__title">
-                                Blue Sport Pants
-                            </h2>
-                            <span class="products__price">
-                                $69.99
-                            </span>
-                        </article>
-                    </div>
-
-                    <div class="swiper-button-next">
-                        <i class="ri-arrow-right-line"></i>
-                    </div>
-
-                    <div class="swiper-button-prev">
-                        <i class="ri-arrow-left-line"></i>
-                    </div>
-                </div>
-            </section>
-
             <!--==================== BRANDS ====================-->
             <section class="brand section">
                 <h2 class="section__title">
@@ -263,34 +270,32 @@
 
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
-            <div class="footer__container container grid">
+            <div class="footer__container container grid" id="footer">
                 <div>
                     <a href="#" class="footer__logo">
-                        Shop.
+                        Mis Camisetas.
                     </a>
 
                     <p class="footer__description">
-                        Committed to bringing you the <br> 
-                        best clothing from popular <br>
-                        brands
+                        <strong>¡Qué tu equipo destaque con una camiseta única que solo puedes encontrar en Mis Camisetas!</strong>
                     </p>
                 </div>
 
                 <div class="footer__content">
                     <div>
                         <h3 class="footer__title">
-                            Company
+                            Nosotros
                         </h3>
     
                         <ul class="footer__links">
                             <li>
-                                <a href="#" class="footer__link">Shop</a>
+                                <a href="#" class="footer__link">Mis Camisetas</a>
                             </li>
                             <li>
-                                <a href="#" class="footer__link">Category</a>
+                                <a href="#" class="footer__link">Contacto</a>
                             </li>
                             <li>
-                                <a href="#" class="footer__link">Contact info</a>
+                                <a href="#" class="footer__link">Tienda</a>
                             </li>
                         </ul>
                     </div>
@@ -302,31 +307,27 @@
     
                         <ul class="footer__links">
                             <li>
-                                <a href="#" class="footer__link">Events</a>
+                                <a href="#" class="footer__link">Entradas populares</a>
                             </li>
                             <li>
-                                <a href="#" class="footer__link">Popular news</a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer__link">Recent news</a>
+                                <a href="#" class="footer__link">Noticias recientes</a>
                             </li>
                         </ul>
                     </div>
     
                     <div>
                         <h3 class="footer__title">
-                            Office
+                            Correo
                         </h3>
     
                         <p class="footer__information">
-                            Monday - Saturday <br>
-                            9AM - 10PM
+                            xxxx@miscamisetas.com <br>
                         </p>
                     </div>
     
                     <div>
                         <h3 class="footer__title">
-                            Contact us
+                            Contacto
                         </h3>
     
                         <ul class="footer__social">
@@ -349,11 +350,11 @@
 
             <div class="footer__info container">
                 <span class="footer__copy">
-                    &#169; Bedimcode. All rigths reserved
+                    &#169; Mis Camisetas. Todos los derechos reservados
                 </span>
 
                 <a href="#" class="footer__privacy">
-                    Terms & Conditions
+                    Términos y condiciones
                 </a>
             </div>
         </footer>
