@@ -3,7 +3,8 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem;
+  --header-height: auto;
+
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -67,8 +68,14 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: .4s; /*For animation dark mode*/
+  width: 100%;
 }
 
+html, body{
+  width: 100%;
+  overflow-x: auto;
+  
+}
 h1, h2, h3 {
   color: var(--title-color);
   font-weight: var(--font-medium);
@@ -140,7 +147,7 @@ body.dark-theme{
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1024px;
+  max-width: 100%;
   margin-right: 1.5rem;
   margin-left: 1.5rem;
 }
@@ -186,6 +193,14 @@ body.dark-theme{
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
+
+.miscamisetas_logo {
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 100px; /* ajusta el ancho máximo de la imagen según sea necesario */
+}
+
 @media screen and (max-width: 1023px) {
   .nav__menu{
     position: fixed;
@@ -302,7 +317,7 @@ body.dark-theme{
 
 /*=============== NEW ===============*/
 .new__container{
-  row-gap: 2.5rem;
+  column-gap: 2.5rem;
   padding-bottom: 1.5rem;
 }
 
@@ -577,7 +592,7 @@ body.dark-theme{
 
   .footer__content{
     grid-template-columns: max-content;
-    row-gap: 2rem;
+    column-gap: 2rem;
   }
 
   .nav__menu{
@@ -661,7 +676,7 @@ body.dark-theme{
   .home__container,
   .new__container{
     grid-template-columns: repeat(2, max-content);
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .home__images{
@@ -694,7 +709,8 @@ body.dark-theme{
 
   .nav__menu{
     width: initial;
-    margin-left: auto;  
+    margin-left: auto;
+    margin-right: 1.5rem;  
   }
 
   .nav__list{
@@ -842,3 +858,4 @@ body.dark-theme{
     zoom: 2.3;
   }
 }
+
