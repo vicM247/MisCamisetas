@@ -3,8 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: auto;
-
+  --header-height: 3.5rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -68,14 +67,8 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: .4s; /*For animation dark mode*/
-  width: 100%;
 }
 
-html, body{
-  width: 100%;
-  overflow-x: auto;
-  
-}
 h1, h2, h3 {
   color: var(--title-color);
   font-weight: var(--font-medium);
@@ -147,7 +140,7 @@ body.dark-theme{
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 100%;
+  max-width: 1024px;
   margin-right: 1.5rem;
   margin-left: 1.5rem;
 }
@@ -676,7 +669,7 @@ body.dark-theme{
   .home__container,
   .new__container{
     grid-template-columns: repeat(2, max-content);
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .home__images{
@@ -858,4 +851,3 @@ body.dark-theme{
     zoom: 2.3;
   }
 }
-
